@@ -13,7 +13,7 @@ function App() {
       }
     );
 
-    console.log(response);
+    console.log(await response.json());
 
     //setCarreras(carreras);
     setLoading(false);
@@ -31,8 +31,10 @@ function App() {
         <div className="content">
           <table className="table">
             <thead>
-              <th>ID</th>
-              <th>Nombre</th>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
